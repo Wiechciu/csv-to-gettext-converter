@@ -6,6 +6,12 @@ Translations based on CSV files are limited in how they can be processed in Godo
 
 This addon makes it easier to convert existing CSV translation files into the gettext format, allowing it to be edited with professional localization software like [Poedit](https://poedit.net/) to take advantage of all localization features, including translation context and plural forms, that are required for many languages.
 
+Quoting [Godot Docs - Localization using gettext](https://docs.godotengine.org/en/stable/tutorials/i18n/localization_using_gettext.html), other advantages of using gettext over CSV are:
+- gettext is a standard format, which can be edited using any text editor or GUI editors such as Poedit.
+- gettext is supported by translation platforms such as Transifex and Weblate, which makes it easier for people to collaborate to localization.
+- Compared to CSV, gettext works better with version control systems like Git, as each locale has its own messages file.
+- Multiline strings are more convenient to edit in gettext files compared to CSV files.
+
 ---
 
 ## ✨ Features
