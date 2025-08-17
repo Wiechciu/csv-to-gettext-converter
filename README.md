@@ -1,4 +1,4 @@
-# CSV to Gettext (PO/POT) Converter for Godot
+# CSV to gettext converter for Godot
 
 A Godot Editor addon that converts translation data stored in CSV files into [gettext](https://www.gnu.org/software/gettext/) `.po` and `.pot` files.  
 This makes it easier to work with translators and standard localization workflows while keeping your project’s translation sources editable in a simple CSV format.  
