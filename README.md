@@ -36,7 +36,7 @@ This makes it easier to work with translators and standard localization workflow
    - The following columns represent **languages** (`en`, `de`, `pl`, …)  
 
 2. In the **FileSystem dock**, right-click on your CSV file  
-3. Select **Convert CSV to Gettext**  
+3. Select **Convert CSV to gettext**  
 4. If any `.po` or `.pot` files already exist in that directory, you’ll be asked whether they should be overwritten  
 5. After confirmation, the plugin generates:  
    - A `.pot` template file from the source language  
@@ -46,11 +46,14 @@ This makes it easier to work with translators and standard localization workflow
 
 ## 📂 Example Output
 
-- /translations/
-- messages.pot
-- en.po
-- de.po
-- pl.po
+Source file:
+- `/translation/translation.csv`
+
+Generated files:
+- `/translation/translation.pot`
+- `/translation/en.po`
+- `/translation/de.po`
+- `/translation/pl.po`
 
 
 ---
@@ -61,7 +64,7 @@ To use the generated `.po` files in your game:
 
 ```gdscript
 # Load a PO file into the TranslationServer
-var translation = load("res://translations/de.po")
+var translation = load("res://translation/de.po")
 TranslationServer.add_translation(translation)
 
 # Switch active locale
