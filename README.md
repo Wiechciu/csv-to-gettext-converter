@@ -68,6 +68,25 @@ Generated files:
 - `/translation/de.po`
 - `/translation/pl.po`
 
+The `translation.pot` file will contain only keys without any translations: 
+```
+msgid "hello_world"
+msgstr ""
+
+msgid "exit_game"
+msgstr ""
+```
+
+Each `.po` file will contain a key with translation, e.g. `en.po` will contain:
+```
+msgid "hello_world"
+msgstr "Hello World!"
+
+msgid "exit_game"
+msgstr "Exit Game"
+```
+
+You can find more details on how to work with gettext format here: [Godot Docs - Localization using gettext](https://docs.godotengine.org/en/stable/tutorials/i18n/localization_using_gettext.html).
 
 ---
 
