@@ -12,6 +12,8 @@ Quoting [Godot Docs - Localization using gettext](https://docs.godotengine.org/e
 - Compared to CSV, gettext works better with version control systems like Git, as each locale has its own messages file.
 - Multiline strings are more convenient to edit in gettext files compared to CSV files.
 
+**If your project still runs on CSV translation, now is the best time to easily convert it to gettext!**
+
 ---
 
 ## ✨ Features
