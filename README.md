@@ -1,5 +1,14 @@
 # CSV to gettext converter for Godot
 
+- [✨ Features](#-features)
+- [📦 Installation](#-installation)
+- [⚙️ Usage](#️-usage)
+- [📂 Example Output](#-example-output)
+- [📖 Loading Translations in Godot](#-loading-translations-in-godot)
+- [💡 Use Cases](#-use-cases)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+
 A Godot Editor addon that converts translation data stored in CSV files into [gettext](https://www.gnu.org/software/gettext/) `.po` and `.pot` files.
 
 Translations based on CSV files are easy to work with and kick start the localization of your project, but at the same time are limited in how they can be processed in Godot, e.g. translation context and plural forms are available only with gettext.
@@ -122,6 +131,13 @@ TranslationServer.set_locale("de")
 print(tr("hello_world"))  # → Hallo Welt!
 ```
 
+## 💡 Use Cases
+
+- 🕹 **Indie game developers** starting with CSV translations but needing plural forms and context for more complex localization  
+- 🌍 **Teams using localization platforms** (e.g., Weblate, Transifex) who require `.po` files for collaboration  
+- 📝 **Projects with non-technical translators** who prefer GUI tools like Poedit over raw CSV editing  
+- 🔄 **Migrating existing projects** from CSV to gettext for better version control and long-term maintainability  
+- 🚀 **Prototyping games quickly** with CSV, then seamlessly switching to gettext for production  
 ## 🤝 Contributing
 
 Pull requests, bug reports, and suggestions are welcome!
@@ -129,5 +145,5 @@ If you’d like to add features, feel free to fork and submit a PR.
 
 ## 📜 License
 
-MIT License – feel free to use in commercial or open-source projects.
+[MIT License](https://github.com/Wiechciu/csv-to-gettext-converter?tab=MIT-1-ov-file) – feel free to use in commercial or open-source projects.
 
