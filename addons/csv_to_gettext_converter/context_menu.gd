@@ -6,15 +6,16 @@ const ICON = preload("res://addons/csv_to_gettext_converter/icon.png")
 const HEADER: String = '#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: "
-"POT-Creation-Date: "
-"PO-Revision-Date: "
-"Last-Translator: "
-"Language-Team: "
-"MIME-Version: 1.0"
-"Content-Type: text/plain; charset=UTF-8"
-"Content-Transfer-Encoding: 8bit"
-"X-Generator: Poedit 3.4.2"\n\n'
+"Project-Id-Version: \\n"
+"POT-Creation-Date: \\n"
+"PO-Revision-Date: \\n"
+"Last-Translator: \\n"
+"Language-Team: \\n"
+"Language: \\n"
+"MIME-Version: 1.0\\n"
+"Content-Type: text/plain; charset=UTF-8\\n"
+"Content-Transfer-Encoding: 8bit\\n"
+"X-Generator: Poedit 3.4.2\\n"\n\n'
 
 var created_files: PackedStringArray
 var created_files_string: String:
@@ -135,7 +136,7 @@ func _create_overwrite_confirmation_dialog(full_path: String, text: String) -> v
 
 
 func _create_file_content(dict: Dictionary, language: String) -> String:
-	var file_content: String = HEADER
+	var file_content: String = HEADER.replace("Language: ", "Language: %s" % language)
 	for index in dict["key"].size():
 		file_content += 'msgid "%s"\n' % [dict["key"][index]]
 		if language == "key":
