@@ -25,7 +25,7 @@ Quoting [Godot Docs - Localization using gettext](https://docs.godotengine.org/e
 
 ---
 
-## ✨ Features
+### ✨ Features
 
 - 📑 Convert CSV translations directly into `.po` and `.pot` files  
 - 🛠 Works as a Godot **Editor Plugin** – no external tools required  
@@ -35,7 +35,7 @@ Quoting [Godot Docs - Localization using gettext](https://docs.godotengine.org/e
 
 ---
 
-## 📦 Installation
+### 📦 Installation
 
 1. Copy the `addons/csv_to_gettext_converter/` folder into your Godot project’s `addons/` directory  
 2. In Godot, go to **Project > Project Settings > Plugins**  
@@ -45,7 +45,7 @@ Quoting [Godot Docs - Localization using gettext](https://docs.godotengine.org/e
 
 ---
 
-## ⚙️ Usage
+### ⚙️ Usage
 
 1. Prepare your translation CSV. Example format:  
 
@@ -74,7 +74,7 @@ Quoting [Godot Docs - Localization using gettext](https://docs.godotengine.org/e
 
 ---
 
-## 📂 Example Output
+### 📂 Example Output
 
 Source file:
 - `/translation/translation.csv`
@@ -107,7 +107,7 @@ You can find more details on how to work with gettext format here: [Godot Docs -
 
 ---
 
-## 📖 Loading Translations in Godot
+### 📖 Loading Translations in Godot
 
 To use the generated `.po` files in your game:
 
@@ -131,19 +131,26 @@ TranslationServer.set_locale("de")
 print(tr("hello_world"))  # → Hallo Welt!
 ```
 
-## 💡 Use Cases
+---
+
+### 💡 Use Cases
 
 - 🕹 **Indie game developers** starting with CSV translations but needing plural forms and context for more complex localization  
 - 🌍 **Teams using localization platforms** (e.g., Weblate, Transifex) who require `.po` files for collaboration  
 - 📝 **Projects with non-technical translators** who prefer GUI tools like Poedit over raw CSV editing  
 - 🔄 **Migrating existing projects** from CSV to gettext for better version control and long-term maintainability  
 - 🚀 **Prototyping games quickly** with CSV, then seamlessly switching to gettext for production  
-## 🤝 Contributing
+
+---
+
+### 🤝 Contributing
 
 Pull requests, bug reports, and suggestions are welcome!
 If you’d like to add features, feel free to fork and submit a PR.
 
-## 📜 License
+---
+
+### 📜 License
 
 [MIT License](https://github.com/Wiechciu/csv-to-gettext-converter?tab=MIT-1-ov-file) – feel free to use in commercial or open-source projects.
 
