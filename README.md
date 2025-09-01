@@ -37,7 +37,7 @@ Quoting [Godot Docs - Localization using gettext](https://docs.godotengine.org/e
 
 ### 📦 Installation
 
-1. Copy the `addons/csv_to_gettext_converter/` folder into your Godot project’s `addons/` directory  
+1. Copy the the contents of this repository folder into your Godot project’s `addons/csv_to_gettext_converter` directory  
 2. In Godot, go to **Project > Project Settings > Plugins**  
 3. Enable **CSV to gettext converter**  
 
